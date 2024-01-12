@@ -1,0 +1,45 @@
+#contact {
+  &-a {
+    .form-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "massage massage"
+        "button button";
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .name {
+        grid-area: name;
+      }
+      .email {
+        grid-area: email;
+      }
+      .subject {
+        grid-area: subject;
+      }
+      .phone {
+        grid-area: phone;
+      }
+      .massage {
+        grid-area: massage;
+        height: 180px;
+      }
+      .btn-dark {
+        grid-area: button;
+      }
+      .input {
+        padding: 0.5rem;
+      }
+    }
+  }
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
